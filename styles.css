@@ -268,9 +268,9 @@ li {
     margin-top: 40vh;
     display:flex;
 }
-.Logo{
-    height:200px;
-    width:auto;
+.Contact-me .Logo{
+    height:150px;
+    width:150px;
     display:flex;
 }
 
