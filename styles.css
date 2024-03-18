@@ -32,11 +32,13 @@ header {
 .habilidades,
 .linguagens,
 .framework {
+    height:250px;
+    width:250px;
     flex-grow: 1; /* Alterado para flex-grow */
     border-radius: 90%;
     background-color: #FA558C;
     padding: 5%; /* Alterado para unidades relativas */
-    margin: 1%; /* Espaçamento entre elementos */
+    margin: 1.5%; /* Espaçamento entre elementos */
 }
 
 .Icon ul {
