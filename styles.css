@@ -266,6 +266,12 @@ li {
 .head_final.h1 {
     text-align: center;
     margin-top: 40vh;
+    display:flex;
+}
+.Logo{
+    height:200px;
+    width:auto;
+    display:flex;
 }
 
 /* Fontes */
