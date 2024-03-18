@@ -274,7 +274,7 @@ li {
 
 @font-face {
     font-family: 'Raillinc';
-    src: url('/Fonte/Raillinc.otf') format('truetype');
+    src: url('Fonte/Raillinc.otf') format('truetype');
 }
 
 /* Estilos para telas maiores que 768px */
