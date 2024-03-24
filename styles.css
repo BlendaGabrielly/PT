@@ -422,25 +422,11 @@ li {
         padding: 5%;
         margin: 1%;
     }
-    .Trabalho {
-        position: fixed; /* Posicionamento fixo para manter centralizado */
-        top: 50%; /* Posição vertical inicial no meio */
-        left: 50%; /* Posição horizontal inicial no meio */
-        transform: translate(-50%, -50%); /* Centralizar horizontal e verticalmente */
-        background-color: #fff; /* Cor de fundo */
-        padding: 20px; /* Preenchimento */
-        border-radius: 10px; /* Raio da borda */
-    
-        /* Largura inicial e máxima */
-        width: 80%;
-        max-width: 400px; /* Ajuste conforme necessário */
-    }  
+
 }
 /* Estilos para telas menores ou iguais a 768px */
 @media only screen and (max-width: 768px) {
-    .Trabalho {
-        width: 90%;
-    }
+  
     /* Defina os estilos que deseja aplicar para telas menores ou iguais a 768px aqui */
     header {
         top: 10px;
