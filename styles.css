@@ -423,17 +423,24 @@ li {
         margin: 1%;
     }
     .Trabalho {
-        position: fixed; /* Você pode ajustar isso conforme necessário */
-        top: 50%; /* Define a posição inicial no meio vertical */
-        left: 50%; /* Define a posição inicial no meio horizontal */
-        transform: translate(-50%, -50%); /* Move o elemento de volta 50% de sua largura e altura */
-        background-color: #fff; /* Ajuste a cor de fundo conforme necessário */
-        padding: 20px; /* Ajuste o preenchimento conforme necessário */
-        border-radius: 10px; /* Ajuste o raio da borda conforme necessário */
-    }    
+        position: fixed; /* Posicionamento fixo para manter centralizado */
+        top: 50%; /* Posição vertical inicial no meio */
+        left: 50%; /* Posição horizontal inicial no meio */
+        transform: translate(-50%, -50%); /* Centralizar horizontal e verticalmente */
+        background-color: #fff; /* Cor de fundo */
+        padding: 20px; /* Preenchimento */
+        border-radius: 10px; /* Raio da borda */
+    
+        /* Largura inicial e máxima */
+        width: 80%;
+        max-width: 400px; /* Ajuste conforme necessário */
+    }  
 }
 /* Estilos para telas menores ou iguais a 768px */
 @media only screen and (max-width: 768px) {
+    .Trabalho {
+        width: 90%;
+    }
     /* Defina os estilos que deseja aplicar para telas menores ou iguais a 768px aqui */
     header {
         top: 10px;
