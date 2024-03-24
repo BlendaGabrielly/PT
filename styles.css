@@ -22,7 +22,13 @@ nav {
 }
 
 .User {
-    margin-right: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Ajustado */
+    display: flex;
+    box-shadow: 0 0 10px 11px #ff1493;
+    border-radius: 50%;
+    margin-left: 20px;
 }
 
 .Icon ul {
@@ -422,7 +428,15 @@ li {
     /* Defina os estilos que deseja aplicar para telas menores ou iguais a 768px aqui */
     header {
         top: 10px;
-        right: 10px;
+        left: 10px; /* Corrigido para 10px */
+        right: initial; /* Adicionado */
+        width: auto; /* Alterado */
+    }
+
+    .User {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
     }
 
     .slide-content {
@@ -440,52 +454,49 @@ li {
 
     .Sobre {
         flex-direction: column;
-        align-items: center; /* Adicionado */
+        align-items: center;
     }
 
     .habilidades_linguagens_framework {
         flex-direction: column;
-        align-items: center; /* Adicionado */
+        align-items: center;
     }
 
     .habilidades,
     .linguagens,
     .framework {
         flex-grow: 1;
-        width: 90%; /* Modificado */
-        max-width: 300px; /* Adicionado */
-        padding: 10%; /* Modificado */
-        margin: 5% 0; /* Modificado */
-        text-align: center; /* Adicionado */
+        width: 90%;
+        max-width: 300px;
+        padding: 10%;
+        margin: 5% 0;
+        text-align: center;
     }
 
     .Icon ul li {
-        margin-left: 0; /* Alterado para 0 */
-        margin-right: 10px; /* Adicionado */
-    }
-
-    .User {
-        left: 50%; /* Adicionado */
-        transform: translateX(-50%); /* Adicionado */
+        margin-left: 0;
+        margin-right: 10px;
     }
 
     .Sobre_mim {
-        width: 90%; /* Modificado */
-        padding: 8%; /* Modificado */
-        margin: 5% 0; /* Modificado */
+        width: 90%;
+        padding: 8%;
+        margin: 5% 0;
     }
 
     .button {
-        margin: 10px 0; /* Modificado */
+        margin: 10px 0;
     }
 
     .Contact-me {
-        padding: 20px; /* Adicionado */
+        padding: 20px;
     }
 
     .Contact-me h1 {
-        margin-bottom: 10px; /* Modificado */
+        margin-bottom: 10px;
     }
+}
+
 
     .head_final.h1 {
         margin-top: 20px; /* Modificado */
