@@ -255,16 +255,16 @@ li {
 
 .slide-container {
     max-width: 1200px;
-    width: 100%;
     background-color: #F6F3FA;
     padding: 70px 0;
     border-radius: 25px;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow-y: auto; /* Adicione overflow-y para permitir rolagem vertical */
 }
+
+
 
 .overlay {
     position: absolute;
