@@ -425,45 +425,36 @@ li {
 
 }
 /* Estilos para telas menores ou iguais a 768px */
+/* Estilos para telas menores ou iguais a 768px */
 @media only screen and (max-width: 768px) {
-  
-    /* Defina os estilos que deseja aplicar para telas menores ou iguais a 768px aqui */
+    /* Ajustes para o cabeçalho */
     header {
         top: 10px;
-        left: 10px; /* Corrigido para 10px */
+        left: 10px; /* Ajustado para 10px */
         right: initial; /* Adicionado */
         width: auto; /* Alterado */
     }
 
+    /* Ajustes para o ícone do usuário */
     .User {
         left: 50%;
         transform: translateX(-50%);
         margin-left: 0;
     }
 
-    .slide-content {
-        margin: 0 20px;
-    }
-
-    .slide-container {
-        border-radius: 0;
-        padding: 70px 0;
-    }
-
-    .overlay {
-        border-radius: 0;
-    }
-
+    /* Ajustes para a seção Sobre */
     .Sobre {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Ajustes para as seções de habilidades */
     .habilidades_linguagens_framework {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Ajustes para os elementos de habilidades, linguagens e framework */
     .habilidades,
     .linguagens,
     .framework {
@@ -475,21 +466,25 @@ li {
         text-align: center;
     }
 
+    /* Ajustes para o espaçamento do ícone na lista */
     .Icon ul li {
         margin-left: 0;
         margin-right: 10px;
     }
 
+    /* Ajustes para a seção "Sobre mim" */
     .Sobre_mim {
         width: 90%;
         padding: 8%;
         margin: 5% 0;
     }
 
+    /* Ajustes para o botão */
     .button {
         margin: 10px 0;
     }
 
+    /* Ajustes para a seção de Contato */
     .Contact-me {
         padding: 20px;
     }
@@ -497,19 +492,17 @@ li {
     .Contact-me h1 {
         margin-bottom: 10px;
     }
-}
 
-
+    /* Ajustes para o rodapé */
     .head_final.h1 {
         margin-top: 20px; /* Modificado */
     }
-    
+
+    /* Ajustes para a classe "info" */
     .info {
         width: 90%; /* Defina a largura para ocupar 90% da largura disponível */
         padding: 10px; /* Adicione algum preenchimento interno */
         margin: 10px 0; /* Adicione uma margem para separá-la de outros elementos */
         text-align: center; /* Alinhe o texto ao centro */
     }
-
 }
-
