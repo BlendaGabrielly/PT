@@ -290,60 +290,23 @@ body {
     src: url("Fonte/Raillinc.otf") format("truetype");
   }
 
-  /* Media queries para tornar o layout responsivo */
+  /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
-    /* Seção Sobre */
-    .Sobre_mim {
-      width: 90%;
-      padding: 3%;
+
+    .slide-container {
+      padding: 50px 0;
     }
-  
+    .Sobre_mim {
+      width: 100%;
+    }
     .habilidades_linguagens_framework {
       flex-direction: column;
-      align-items: center;
     }
-  
     .habilidades,
     .linguagens,
     .framework {
       width: 100%;
-      height: auto;
       margin: 10px 0;
-    }
-  
-    /* Slide */
-    .slide-content {
-      margin: 0 20px;
-    }
-  
-    /* Rodapé */
-    .head_final.h1 {
-      margin-top: 20vh;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    /* Seção Sobre */
-    .Sobre_mim {
-      width: 100%;
-      padding: 2%;
-    }
-  
-    .habilidades,
-    .linguagens,
-    .framework {
-      height: auto;
-      width: 80%;
-    }
-  
-    /* Slide */
-    .slide-content {
-      margin: 0 10px;
-    }
-  
-    /* Rodapé */
-    .head_final.h1 {
-      margin-top: 10vh;
     }
   }
   
