@@ -1,291 +1,349 @@
 /* Estilos gerais */
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Raillinc", sans-serif;
-  background-color: #ffffff;
-  color: #1d1c1a;
-  margin: 0; /* Adicionado para remover margens padrão */
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raillinc", sans-serif;
+    background-color: #ffffff;
+    color: #1d1c1a;
+    margin: 0; /* Adicionado para remover margens padrão */
+  }
+  
+  /* Cabeçalho */
+  header {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .User {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    box-shadow: 0 0 10px 11px #ff1493;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  
+  .Icon ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Icon ul li {
+    margin-left: 10px;
+  }
+  
+  .Icon ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .Icon ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#990295, #fab0e4);
+    transition: 0.6s;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .Icon ul li a:hover {
+    background: transparent;
+    box-shadow: 0 0 10px 11px #ff1493;
+    border-radius: 50%;
+  }
+  
+  .Icon ul li a img {
+    width: 30px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  /* Seção Sobre */
+  .Sobre_mim {
+    text-align: center;
+    padding: 5%;
+    background-color: #f6f3fa;
+    border-radius: 50px;
+    width: 85%;
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+  }
+  
+  /* Seção Sobre */
+  .Sobre {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .habilidades_linguagens_framework {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .habilidades,
+  .linguagens,
+  .framework {
+    height: 250px;
+    width: 250px;
+    flex-grow: 1;
+    border-radius: 90%;
+    background-color: #fa558c;
+    padding: 5%;
+    margin: 1.5%;
+  }
+  
+  /* Estilos para a imagem dentro da classe User */
+  .User img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Títulos */
+  h1 {
+    font-family: "adelia";
+    text-align: center;
+  }
+  
+  h2,
+  h3 {
+    margin-bottom: 10px;
+    font-family: "Raillinc";
+  }
+  
+  /* Listas */
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Cards */
+  .card {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: #c120ef;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 4px solid #c120ef;
+  }
+  
+  .button {
+    border: none;
+    padding: 8px 16px;
+    background: #4070f4;
+    border-radius: 6px;
+    color: #ffffff;
+    margin: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Slide */
+  .slide-content {
+    margin: 0 40px;
+  }
+  
+  .image-content,
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  
+  .image-content {
+    position: relative;
+    row-gap: 5px;
+  }
+  
+  .slide-container {
+    max-width: 1200px;
+    background-color: #f6f3fa;
+    padding: 70px 0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(108, 56, 123, 0.8);
+    border-radius: 25px 25px 0 25px;
+  }
+  
+  /* Botão */
+  .button {
+    border: none;
+    padding: 8px 16px;
+    background-color: #ae19b9;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #265df2;
+  }
+  
+  /* Seção Contato */
+  .Contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Contact-me h1 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .Contact-me button {
+    padding: 10px 20px;
+    background-color: #c958e9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Contact-me button:hover {
+    background-color: #f84589;
+  }
+  
+  .Contact-me .label {
+    font-family: "Raillinc";
+  }
+  
+  /* Rodapé */
+  .head_final {
+    background: linear-gradient(#c958e9, #f84589);
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    clear: both;
+  }
+  
+  .head_final.h1 {
+    text-align: center;
+    margin-top: 40vh;
+    display: flex;
+  }
+  
+  .Contact-me .Logo {
+    height: 150px;
+    width: 150px;
+    display: flex;
+  }
+  
+  /* Fontes */
+  @font-face {
+    font-family: "adelia";
+    src: url("Fonte/adelia.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Raillinc";
+    src: url("Fonte/Raillinc.otf") format("truetype");
+  }
 
-/* Cabeçalho */
-header {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-}
-
-.User {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  box-shadow: 0 0 10px 11px #ff1493;
-  border-radius: 50%;
-  margin-left: 20px;
-}
-
-.Icon ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.Icon ul li {
-  margin-left: 10px;
-}
-
-.Icon ul li a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-}
-
-.Icon ul li a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#990295, #fab0e4);
-  transition: 0.6s;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.Icon ul li a:hover {
-  background: transparent;
-  box-shadow: 0 0 10px 11px #ff1493;
-  border-radius: 50%;
-}
-
-.Icon ul li a img {
-  width: 30px;
-  height: auto;
-  padding: 10px;
-}
-
-/* Seção Sobre */
-.Sobre_mim {
-  text-align: center;
-  padding: 5%;
-  background-color: #f6f3fa;
-  border-radius: 50px;
-  width: 85%;
-  margin: auto;
-  max-width: 100%;
-  display: flex;
-}
-
-/* Seção Sobre */
-.Sobre {
-  display: flex;
-  flex-direction: column;
-}
-
-.habilidades_linguagens_framework {
-  display: flex;
-  justify-content: space-between;
-}
-
-.habilidades,
-.linguagens,
-.framework {
-  height: 250px;
-  width: 250px;
-  flex-grow: 1;
-  border-radius: 90%;
-  background-color: #fa558c;
-  padding: 5%;
-  margin: 1.5%;
-}
-
-/* Estilos para a imagem dentro da classe User */
-.User img {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-}
-
-/* Títulos */
-h1 {
-  font-family: "adelia";
-  text-align: center;
-}
-
-h2,
-h3 {
-  margin-bottom: 10px;
-  font-family: "Raillinc";
-}
-
-/* Listas */
-li {
-  margin-bottom: 5px;
-}
-
-/* Cards */
-.card {
-  margin-bottom: 20px;
-  border-radius: 25px;
-  background-color: #c120ef;
-  color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-image {
-  position: relative;
-  height: 150px;
-  width: 150px;
-}
-
-.card-image .card-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border: 4px solid #c120ef;
-}
-
-.button {
-  border: none;
-  padding: 8px 16px;
-  background: #4070f4;
-  border-radius: 6px;
-  color: #ffffff;
-  margin: 14px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-/* Slide */
-.slide-content {
-  margin: 0 40px;
-}
-
-.image-content,
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-
-.image-content {
-  position: relative;
-  row-gap: 5px;
-}
-
-.slide-container {
-  max-width: 1200px;
-  background-color: #f6f3fa;
-  padding: 70px 0;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-}
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(108, 56, 123, 0.8);
-  border-radius: 25px 25px 0 25px;
-}
-
-/* Botão */
-.button {
-  border: none;
-  padding: 8px 16px;
-  background-color: #ae19b9;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  background: #265df2;
-}
-
-/* Seção Contato */
-.Contact-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.Contact-me h1 {
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.Contact-me button {
-  padding: 10px 20px;
-  background-color: #c958e9;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.Contact-me button:hover {
-  background-color: #f84589;
-}
-
-.Contact-me .label {
-  font-family: "Raillinc";
-}
-
-/* Rodapé */
-.head_final {
-  background: linear-gradient(#c958e9, #f84589);
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  position: relative;
-  clear: both;
-}
-
-.head_final.h1 {
-  text-align: center;
-  margin-top: 40vh;
-  display: flex;
-}
-
-.Contact-me .Logo {
-  height: 150px;
-  width: 150px;
-  display: flex;
-}
-
-/* Fontes */
-@font-face {
-  font-family: "adelia";
-  src: url("Fonte/adelia.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Raillinc";
-  src: url("Fonte/Raillinc.otf") format("truetype");
-}
+  /* Media queries para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+    /* Seção Sobre */
+    .Sobre_mim {
+      width: 90%;
+      padding: 3%;
+    }
+  
+    .habilidades_linguagens_framework {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .habilidades,
+    .linguagens,
+    .framework {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+  
+    /* Slide */
+    .slide-content {
+      margin: 0 20px;
+    }
+  
+    /* Rodapé */
+    .head_final.h1 {
+      margin-top: 20vh;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Seção Sobre */
+    .Sobre_mim {
+      width: 100%;
+      padding: 2%;
+    }
+  
+    .habilidades,
+    .linguagens,
+    .framework {
+      height: auto;
+      width: 80%;
+    }
+  
+    /* Slide */
+    .slide-content {
+      margin: 0 10px;
+    }
+  
+    /* Rodapé */
+    .head_final.h1 {
+      margin-top: 10vh;
+    }
+  }
+  
