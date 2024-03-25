@@ -265,6 +265,8 @@ li {
     width: 100%;
     position: relative;
     clear: both;
+    display:flex;
+    
 }
 
 .head_final.h1 {
@@ -290,70 +292,3 @@ li {
     src: url('Fonte/Raillinc.otf') format('truetype');
 }
 
-@media only screen and (max-width: 768px) {
-    .Sobre_mim {
-        width: 100%;
-    }
-    
-    .Sobre {
-        flex-direction: column;
-    }
-    
-    .habilidades_linguagens_framework {
-        flex-direction: column;
-    }
-    
-    .habilidades,
-    .linguagens,
-    .framework {
-        height: 200px;
-        width: 200px;
-        margin: 10px 0;
-    }
-    
-    .head_final.h1 {
-        margin-top: 20vh;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    header {
-        top: 10px;
-        right: 10px;
-    }
-
-    .User {
-        left: 10px;
-    }
-
-    .Icon ul li {
-        margin-left: 5px;
-    }
-
-    .Icon ul li a {
-        width: 40px;
-        height: 40px;
-    }
-
-    .Icon ul li a img {
-        width: 25px;
-        padding: 5px;
-    }
-
-    .Contact-me h1 {
-        margin-bottom: 10px;
-    }
-
-    .Contact-me button {
-        padding: 8px 16px;
-    }
-
-    .head_final.h1 {
-        margin-top: 10vh;
-    }
-
-    .Contact-me .Logo {
-        height: 100px;
-        width: 100px;
-    }
-}
